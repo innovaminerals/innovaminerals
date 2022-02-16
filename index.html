@@ -243,24 +243,7 @@
   opacity:0.2;
 }
 
-/* estilo para que cubra toda la página*/
 
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-}
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
-}
-#cloud-container{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1; /* Remove this line if it's not going to be a background! */
-}
 
 </style>
 <body>
@@ -272,17 +255,17 @@ body{
                     <div class="collapse navbar-collapse"
                         id="navcol-1">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="./dashboard" target="blank">Dashboard</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="./formulario" target="blank">Formulario de proyectos</a></li>
-                            <!--
-                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Editar Tablas</a>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="https://app.powerbi.com/reportEmbed?reportId=17a19450-76f5-45fa-9da0-dd655490b1cb&autoAuth=true&ctid=d96f3d5a-3042-402a-994b-05725b2e1427&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" target="blank">Dashboard</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="https://forms.office.com/r/5eGPXszZzw" target="blank">Formulario de proyectos</a></li>
+
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Editar</a>
                                 <div class="dropdown-menu" role="menu">
-                                    <a class="dropdown-item" role="presentation" href="#">Proyectos</a>
-                                    <a class="dropdown-item" role="presentation" href="#">Desafíos</a>
-                                    <a class="dropdown-item" role="presentation" href="#">Macrodesafíos</a>
+                                    <a class="dropdown-item" role="presentation" href="https://aminerals.sharepoint.com/:x:/r/sites/IOAMSA2021/_layouts/15/Doc.aspx?sourcedoc=%7BB3E5CC53-3C4E-41AC-833E-11EBF92BC9D3%7D&file=151121%20-%20BBDD%20IO.xlsx&action=edit&mobileredirect=true&d=wb3e5cc533c4e41ac833e11ebf92bc9d3" target="blank">Base de Datos Desafíos</a>
+                                    <a class="dropdown-item" role="presentation" href="https://forms.office.com/Pages/DesignPage.aspx?auth_pvr=OrgId#FormId=Wj1v2UIwKkCZSwVyWy4UJxtg0XBIwOFJjAVBbcXItRdURTRMRDA1MTM2UUpKWjMwSEZTOTVHUUJQMSQlQCN0PWcu&FlexPane=SendForm" target="blank">Formulario</a>
+                                    <a class="dropdown-item" role="presentation" href="https://aminerals.sharepoint.com/:x:/r/sites/IOAMSA2021/_layouts/15/Doc.aspx?sourcedoc=%7Bb3e5cc53-3c4e-41ac-833e-11ebf92bc9d3%7D&action=edit&wdorigin=OFFICECOM-WEB.START.REC-OIB&wdenableroaming=1&wdredirectionreason=Force_SingleStepBoot&wdinitialsession=6c37371b-11cb-433b-a50f-c0536778e07e&wdrldsc=2&wdrldc=1&wdrldr=ContinueInExcel" target="blank">Respuestas del formulario</a>
                                 </div>
                             </li>
-                            -->
+
                         </ul>
 
                         <form class="form-inline mr-auto" target="_self">
@@ -297,8 +280,9 @@ body{
                         </form>
                         <!--
                         <span class="navbar-text"> <a href="#" class="login">Iniciar Sesión</a></span>
+                        
+                        <a class="btn btn-light action-button" role="button" href="../admin">Modificar Datos</a>
                         -->
-                        <a class="btn btn-light action-button" role="button" href="../admin">Iniciar Sesión</a>
                         </div>
                 </div>
             </nav>
@@ -307,8 +291,8 @@ body{
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
                         <h1>Panel de Administración</h1>
-                        <p>Revisa y modifica datos de la base de datos, luego revisa el informe generado a partir de estos en el dashboard geenrado automáticamente en Power BI</p>
-                        <a class="btn btn-light action-button" role="button" href="./dashboard">Ver Dashboard</a>
+                        <p>Revisa y modifica datos de la base de datos, luego revisa el informe generado a partir de estos en el dashboard generado automáticamente en Power BI</p>
+                        <a class="btn btn-light action-button" role="button" href="https://app.powerbi.com/reportEmbed?reportId=17a19450-76f5-45fa-9da0-dd655490b1cb&autoAuth=true&ctid=d96f3d5a-3042-402a-994b-05725b2e1427&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" target="blank">Ver Dashboard</a>
                     </div>
                     <!--
                     <div
@@ -325,9 +309,5 @@ body{
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
-<script>
-    function cargarTabla(){
-        return 0
-    }
-</script>
+
 </html>
